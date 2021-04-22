@@ -1,0 +1,82 @@
+{
+  "name": "modif-ui",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Design UI library for React",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "author": "Lipycol",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lipycol/Modif-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lipycol/Modif-UI/issues"
+  },
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "homepage": "https://github.com/Lipycol/Modif-UI#readme",
+  "keywords": [
+    "modif-ui",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/ --ignore **/__tests__,**/__mocks__",
+    "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
+    "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
+    "copy-css:lib": "cpx \"src/components/**/*.css\" lib"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.3"
+  }
+}
