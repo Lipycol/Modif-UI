@@ -50,7 +50,7 @@
     "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
     "copy-css:esm": "cpx \"src/components/**/*.css\" esm",
     "copy-css:lib": "cpx \"src/components/**/*.css\" lib",
-    "docz:dev": "docz dev", 
+    "docz:dev": "docz dev",
     "docz:build": "docz build"
   },
   "eslintConfig": {
