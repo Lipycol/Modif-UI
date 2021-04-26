@@ -1,11 +1,9 @@
 import { css } from 'docz-plugin-css'
 
-export default {
-  title: 'Modif-UI',
-  description: 'A Design UI library for React',
-  plugins: [
-    css({
-      preprocessor: 'postcss'
-    })
-  ]
-}
+export const title = 'Modif-UI';
+export const description = 'A Design UI library for React';
+export const plugins = [
+  css({
+    preprocessor: 'postcss'
+  })
+];
